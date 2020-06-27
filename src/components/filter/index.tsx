@@ -4,7 +4,7 @@ import { isSorted } from '../../services/redux/actions';
 
 function Filter(props: any) {
   const dispatch = useDispatch();
-  const [keyword, setKeyword] = useState('');
+  const [keyword, setKeyword] = useState<string>('');
 
   function handleInput(input: string) {
     setKeyword(input)
